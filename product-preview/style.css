@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;600;700&family=Lato&family=Manrope:wght@800&family=Poppins&family=Red+Hat+Text:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif; ;
+    overflow: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 20px;
+    width: 380px;
+   
+}
+
+
+.container picture img{
+    width: 100%;
+    border-radius: 5px;
+    
+}
+
+.content{
+    padding: 15px 20px;
+}
+
+.content p:nth-child(1){
+    color:  hsl(228, 12%, 48%) ;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.content h1{
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.description{
+    color: hsl(228, 12%, 48%) ;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.prices{
+    display: flex;
+   align-items: center;
+}
+.prices h2{
+    font-size: 50px;
+    color: hsl(158, 36%, 37%);
+    margin-bottom: 10px;
+    margin-right: 30px;
+    font-family: 'Fraunces', serif;
+}
+
+.prices p{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    margin-top: -10px;
+    font-size: 16px;
+}
+
+.btn{
+    position: relative;
+}
+
+.btn button{
+    width: 100%;
+    padding: 15px 0;
+    background: hsl(158, 36%, 37%) ;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background: hsl(158, 36%, 30%);
+}
+.btn img{
+   position: absolute;
+   left: 30%;
+   top: 32%
+}
+
+
+@media screen and (min-width: 640px){
+    .container{
+       display: grid;
+      grid-template-columns: 1fr 1fr;
+     width: 690px;
+     padding-bottom: -500px;
+    }
+
+   .container picture {
+        height: 100%;
+       margin-bottom: -4px;
+       
+   }
+   .content h1{
+    font-size: 39px;
+    font-weight: 600;
+   }
+   .content p{
+    font-size: 15px ;
+   }
+}
